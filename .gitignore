@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+artifacts/
+cache/
+dist/
+coverage/
+
+# Environment files (NEVER commit these!)
+.env
+env.*.config
+*.key
+*.pem
+*.secret
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

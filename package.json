@@ -1,0 +1,24 @@
+{
+  "name": "bluebera-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy_mainnet.js --config hardhat.config.testnet.js --network berachainBepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy_mainnet.js --config hardhat.config.js --network berachain",
+    "verify": "hardhat verify --network berachain",
+    "lint": "echo \"(Optional) Integrate solhint/prettier-plugin-solidity here\""
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
